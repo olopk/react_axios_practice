@@ -5,3 +5,25 @@
     width: 80%;
     margin: auto;
 }
+.List{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+.List li{
+    display: inline-block;
+    padding: 10px;
+}
+.List li a{
+    color: black;
+    text-decoration: none;
+}
+
+.List li a:active,
+.List li a:hover,
+.List li a.active{
+    color: rgb(235, 168, 61);
+}

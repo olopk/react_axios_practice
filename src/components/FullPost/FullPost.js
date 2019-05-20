@@ -10,6 +10,7 @@ class FullPost extends Component {
 
     componentDidUpdate(){
         if(this.props.check){
+            if(!this.state.post || this.props.check !== this.state.post.id)
             axios.get('https://jsonplaceholder.typicode.com/posts/' + this.props.check).then(response => {
             this.setState({post: response.data})
         }).catch(error => {
